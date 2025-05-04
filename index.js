@@ -71,6 +71,9 @@ app.delete("/posts/:id", (req, res) => {
     posts = posts.filter((p) => p.id !== id);
     res.redirect("/posts");
 })
+app.get("/", (req, res) => {
+    res.redirect("/posts"); 
+  });
 app.listen(port, () => {
     console.log(`Server listening to port ${port}`);
 })
