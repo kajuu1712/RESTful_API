@@ -1,0 +1,102 @@
+/* General resets and layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h2 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+h3.username {
+    color: #0077cc;
+    margin: 0;
+}
+
+h4.content {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+/* Post container */
+.indv-post {
+    width: 50rem;
+    background-color: #fff;
+    border-left: 4px solid #0077cc;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.indv-post:hover {
+    transform: scale(1.01);
+}
+
+/* Buttons & Links */
+a {
+    text-decoration: none;
+    color: #0077cc;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* Forms */
+form {
+    margin-top: 10px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Add new post link */
+a[href$="/posts/new"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+a[href$="/posts/new"]:hover {
+    background-color: #218838;
+}
