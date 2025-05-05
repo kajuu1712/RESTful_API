@@ -21,21 +21,31 @@ app.use(methodOverride('_method'));
 //data
 let posts = [
     {
-        username : "user1",
-        content : "content1",
-        id : uuidv4()
+      username: "tech_girl23",
+      content: "Just deployed my first Node.js app! 🚀 #WebDev",
+      id : uuidv4()
     },
     {
-        username : "user2",
-        content : "content2",
-        id : uuidv4()
+      username: "coffeeCoder",
+      content: "Debugging is like being the detective in a crime movie where you're also the murderer.",
+      id : uuidv4()
     },
     {
-        username : "user3",
-        content : "content3",
+      username: "john_doe",
+      content: "Learning EJS templating today... and it's actually fun!",
+      id : uuidv4()
+    },
+    {
+        username: "designqueen",
+        content: "Minimal CSS, maximum impact. Styling my CRUD app like a pro! 🎨",
         id : uuidv4()
-    }
-];
+      },
+      {
+        username: "code_ninja",
+        content: "Finally understood how method-override works. Feeling powerful! 💪",
+        id : uuidv4()
+      }
+  ];
 
 app.get("/posts", (req, res) => {
     res.render("home.ejs", {posts});

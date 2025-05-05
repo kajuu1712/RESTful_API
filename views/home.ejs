@@ -8,16 +8,25 @@
 </head>
 <body>
     <h2>All posts</h2>
-    <a href="http://localhost:8080/posts/new">Add new post</a>
+    <form method="GET" action="/posts/new">
+        <button class="btn">Add new post</button>
+    </form>
+    <br>
     <% for(post of posts) { %>
         <div class="indv-post">
             <h3 class="username">@<%= post.username %></h3>
             <h4 class="content"><%= post.content %></h4>
-            <a href="http://localhost:8080/posts/<%= post.id %>">Show post</a>
-            <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit post</a>
-            <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
-                <button class="btn">Delete post</button>
-            </form>
+            <div class="sed-btn">
+                <form method="GET" action="/posts/<%= post.id %>">
+                    <button class="btn">Show post</button>
+                </form>
+                <form method="GET" action="/posts/<%= post.id %>/edit">
+                    <button class="btn">Edit post</button>
+                </form>
+                <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+                    <button class="btn">Delete post</button>
+                </form>
+            </div>
         </div>
     <% } %>
 </body>
