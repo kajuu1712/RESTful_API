@@ -3,7 +3,7 @@
 A simple CRUD (Create, Read, Update, Delete) blog-style application built with **Node.js**, **Express.js**, **EJS**, and **basic HTML/CSS**.
 
 ## Live demo  
-🔗 [View the deployed app here]()
+🔗 [View the deployed app here](https://restful-api-lxsf.onrender.com)
 
 
 
